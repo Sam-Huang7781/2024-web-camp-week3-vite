@@ -1,0 +1,124 @@
+/* footer */
+.footer {
+  font-family: "Noto Sans TC";
+  font-weight: 400;
+  padding: 48px 12px 32px; /* 等同於 padding: 48px 12px 32px 12px; */
+  .container {
+    padding: 0;
+  }
+  .topic {
+    justify-content: space-between;
+    padding-bottom: 32px;
+    border-bottom: 1px white solid;
+  }
+  .left {
+    .phone {
+      align-items: center;
+      margin-bottom: 8px;
+    }
+    .mail {
+      align-items: center;
+    }
+    .navbar {
+      justify-content: flex-start;
+      a {
+        padding: 12px;
+        padding-left: 0;
+      }
+      a:hover {
+        color: #650300;
+      }
+      li {
+        padding-right: 36px;
+        padding-bottom: 24px;
+      }
+    }
+    span {
+      color: white;
+      font-size: 36px;
+      margin-right: 22px;
+    }
+  }
+  .right {
+    img {
+      width: 48px;
+      margin-left: 32px;
+    }
+    img:hover {
+      background-color: #650300;
+    }
+  }
+  .copyRight {
+    padding-top: 32px;
+    justify-content: space-between;
+    align-items: center;
+    .privacy {
+      li {
+        display: inline-block;
+        margin-left: 48px;
+        font-size: 14px;
+      }
+    }
+  }
+}
+@media (max-width: 992px) {
+  .footer {
+    .container {
+      padding: 0;
+      max-width: 700px;
+    }
+    .topic {
+      padding-bottom: 32px;
+    }
+    .right {
+      img {
+        width: 40px;
+        margin-left: 16px;
+      }
+    }
+    .copyRight {
+      padding-top: 32px;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .footer {
+    padding: 24px 12px 32px; /* 等同於 padding: 48px 12px 32px 12px; */
+    .container {
+      padding: 0;
+      max-width: 350px;
+    }
+    .topic {
+      padding-bottom: 16px;
+    }
+    .left {
+      span {
+        font-size: 16px;
+      }
+      a {
+        font-size: 16px;
+      }
+      .navbar {
+        display: none;
+      }
+    }
+    .right {
+      img {
+        width: 24px;
+        margin-left: 8px;
+      }
+    }
+    .copyRight {
+      flex-direction: column;
+      align-items: flex-start;
+      padding-top: 16px;
+      .privacy {
+        li {
+          display: block;
+          margin: 8px 0;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
